@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5da506558f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-maior">
+        <img src="/src/todaylistlogo.png" alt="logo" class="logo">
+        <div class="box-persistencia">
+            <input type="text" class='texto-tarefa'>
+            <button class="enter">+</button>
+        </div>
+        <div class='container-tarefas-geral'>
+            
+            <!-- Área das tasks que ainda não foram completas -->
+            <div class='incompletas'>
+                <div class="subtitulo"><h4>Fazer</h4></div>
+                <div class='tarefa'>
+                    <p class="conteudo-tarefa">Comprar arroz</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class='tarefa'>
+                    <p class="conteudo-tarefa">Sair com cachorro</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+            <!-- Área das tasks que foram realizadas -->
+            <div class='completas'>
+                <div class="subtitulo"><h4>Feito</h4></div>
+                <div class='tarefa-feita'>
+                    <p class="conteudo-tarefa">Depressão severa</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class='tarefa-feita'>
+                    <p class="conteudo-tarefa">Fracassar em tudo que eu faço</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
