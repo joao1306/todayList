@@ -126,6 +126,11 @@ body {
     color: white;
 
 }
+.tarefa-feita:hover {
+    transition: 0.3s;
+    background-color: rgb(100, 6, 182);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
 
 .subtitulo {
     display: flex;
@@ -229,4 +234,9 @@ i {
 #check-incompletas:hover {
     transition: 0.3s;
     color: rgb(135, 60, 201);
+}
+
+#return:hover {
+    transition: 0.7s;
+    rotate: -360deg;
 }

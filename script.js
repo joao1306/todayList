@@ -14,6 +14,7 @@ $(document).ready(function(){
             </div>
         </li> `
         $('#ul-incompletas').append(tarefaAFazer);
+        $(this).val('');
     });
 
     //DELETAR
@@ -35,12 +36,30 @@ $(document).ready(function(){
         `<li class='tarefa-feita'>
             <p class="conteudo-tarefa"> ${textoTarefaFeita} </p>
             <div class="icons">
-                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-arrow-rotate-left" id="return"></i>
                 <i class="fa-solid fa-trash"></i>
             </div>
         </li>`
         
         $('#ul-completas').append(tarefaFeita);
+    })
+
+    //DESFAZER TAREFA FEITA
+    $('#ul-completas').on('click', '#return', function(){
+        $(this).closest('li').fadeOut(20);
+        
+        var textoTarefa = $(this).closest('.tarefa-feita').find('p').text();
+
+        var tarefaFeita = 
+        `<li class='tarefa'>
+            <p class="conteudo-tarefa">${textoTarefa}</p>
+            <div class="icons">
+                <i class="fa-solid fa-circle-check" id="check-incompletas"></i>
+                <i class="fa-solid fa-trash" id="delet-incompleta"></i>
+            </div>
+        </li> `
+        
+        $('#ul-incompletas').append(tarefaFeita);
     })
 
 })
