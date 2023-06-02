@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container-maior">
-        <img src="/src/todaylistlogo.png" alt="logo" class="logoo">
+        <img src="/src/todaylistlogo.png" alt="logo" class="logo">
         <div class="box-persistencia">
             <input type="text" class='texto-tarefa'>
             <button class="enter">+</button>
@@ -19,45 +19,35 @@
         <div class='container-tarefas-geral'>
             
             <!-- Área das tasks que ainda não foram completas -->
-            <div class='incompletas'>
-                <div class="subtitulo"><h4>Fazer</h4></div>
-                <div class='tarefa'>
-                    <p class="conteudo-tarefa">Comprar arroz</p>
-                    <div class="icons">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-                <div class='tarefa'>
-                    <p class="conteudo-tarefa">Sair com cachorro</p>
-                    <div class="icons">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
+            <div class="subtitulo"><h4>Fazer</h4></div>
                 
-            </div>
+                <ul class="incompletas">                    
+                    
+                    <li class='tarefa'>
+                        <p class="conteudo-tarefa">Comprar arroz</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </li>  
+
+                </ul>
 
 
 
             <!-- Área das tasks que foram realizadas -->
-            <div class='completas'>
-                <div class="subtitulo"><h4>Feito</h4></div>
-                <div class='tarefa-feita'>
-                    <p class="conteudo-tarefa">Depressão severa</p>
+            <div class="subtitulo"><h4>Feito</h4></div>
+            <ul class="completas">                    
+                    
+                <li class='tarefa-feita'>
+                    <p class="conteudo-tarefa">Ir ao mercado</p>
                     <div class="icons">
                         <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-trash"></i>
                     </div>
-                </div>
-                <div class='tarefa-feita'>
-                    <p class="conteudo-tarefa">Fracassar em tudo que eu faço</p>
-                    <div class="icons">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-            </div>
+                </li>  
+
+            </ul>
         </div>
     </div>
 </body>
