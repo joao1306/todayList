@@ -10,7 +10,7 @@ $(document).ready(function(){
             <p class="conteudo-tarefa">${input}</p>
             <div class="icons">
                 <i class="fa-solid fa-circle-check" id="check-incompletas"></i>
-                <i class="fa-solid fa-trash" id="delet-incompleta"></i>
+                <i class="fa-solid fa-trash" id="delete-incompleta"></i>
             </div>
         </li> `
         $('#ul-incompletas').append(tarefaAFazer);
@@ -37,7 +37,7 @@ $(document).ready(function(){
             <p class="conteudo-tarefa"> ${textoTarefaFeita} </p>
             <div class="icons">
                 <i class="fa-solid fa-arrow-rotate-left" id="return"></i>
-                <i class="fa-solid fa-trash"></i>
+                <i class="fa-solid fa-trash" id="delete-completa"></i>
             </div>
         </li>`
         
